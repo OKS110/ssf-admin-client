@@ -14,11 +14,11 @@ export default function Main() {
     const fetchData = async () => {
         try {
             const [customers, guests, products, orders, ordersG] = await Promise.all([
-                axios.post("http://3.34.134.163:9001/admin/customers"),
-                axios.post("http://3.34.134.163:9001/admin/guests"),
-                axios.post("http://3.34.134.163:9001/admin/products"),
-                axios.post("http://3.34.134.163:9001/admin/orders"),
-                axios.post("http://3.34.134.163:9001/admin/ordersG")
+                axios.post("http://3.39.232.155:9001/admin/customers"),
+                axios.post("http://3.39.232.155:9001/admin/guests"),
+                axios.post("http://3.39.232.155:9001/admin/products"),
+                axios.post("http://3.39.232.155:9001/admin/orders"),
+                axios.post("http://3.39.232.155:9001/admin/ordersG")
             ]);
 
             setCustomerData(customers.data);
@@ -64,7 +64,7 @@ export default function Main() {
     /**  주문 상태 업데이트 */
     const updateOrderStatus = async (oid, isGuest = false) => {
         try {
-            await axios.post("http://3.34.134.163:9001/admin/updateOrderStatus", { oid, status: "Delivered", isGuest });
+            await axios.post("http://3.39.232.155:9001/admin/updateOrderStatus", { oid, status: "Delivered", isGuest });
             alert("주문 상태가 'Delivered'로 변경되었습니다.");
         } catch (error) {
             console.error("ERROR 주문 상태 업데이트 오류:", error);

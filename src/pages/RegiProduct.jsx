@@ -109,7 +109,7 @@ export default function RegiProduct() {
         //왜 forEach인가?
 
         try {
-            const response = await axios.post("http://3.34.134.163:9001/upload/multiple", formData, {
+            const response = await axios.post("http://3.39.232.155:9001/upload/multiple", formData, {
                 headers: { "Content-Type": "multipart/form-data" } //Content-Type을 반드시 "multipart/form-data"로 지정 - 이건 왜??
             });
 
