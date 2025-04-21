@@ -35,7 +35,7 @@ export default function Main() {
     useEffect(() => {
         fetchData(); // 처음 한 번 데이터 가져오기
 
-        const socket = new WebSocket("ws://3.34.134.163:9002");
+        const socket = new WebSocket("ws://3.39.232.155:9002");
 
         socket.onopen = () => {
             console.log(" WebSocket 연결 성공 (관리자 페이지)");
