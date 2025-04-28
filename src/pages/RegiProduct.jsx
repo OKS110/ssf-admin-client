@@ -215,27 +215,27 @@ export default function RegiProduct() {
 
                     <li>
                         <Form.Label>가격</Form.Label>
-                        <Form.Control type="text" value={price} onChange={(e) => setPrice(e.target.value)} />
+                        <Form.Control type="text" value={price} placeholder="ex) 10000" onChange={(e) => setPrice(e.target.value)} />
                     </li>
                     <li>
                         <Form.Label>별점</Form.Label>
-                        <Form.Control type="text" value={star} onChange={(e) => setStar(e.target.value)} />
+                        <Form.Control type="text" value={star} placeholder="5" onChange={(e) => setStar(e.target.value)} />
                     </li>
                     <li>
                         <Form.Label>재고</Form.Label>
-                        <Form.Control type="text" value={stock} onChange={(e) => setStock(e.target.value)} />
+                        <Form.Control type="text" value={stock} placeholder="50" onChange={(e) => setStock(e.target.value)} />
                     </li>
                     <li>
                         <Form.Label>할인율</Form.Label>
-                        <Form.Control type="text" value={saleRate} onChange={(e) => setSaleRate(e.target.value)} />
+                        <Form.Control type="text" value={saleRate} placeholder="10" onChange={(e) => setSaleRate(e.target.value)} />
                     </li>
                     <li>
                         <Form.Label>할인가</Form.Label>
-                        <Form.Control type="text" value={salePrice} onChange={(e) => setSalePrice(e.target.value)} />
+                        <Form.Control type="text" value={salePrice} placeholder="9000" onChange={(e) => setSalePrice(e.target.value)} />
                     </li>
                     <li>
                         <Form.Label>브랜드</Form.Label>
-                        <Form.Control type="text" value={brand} onChange={(e) => setBrand(e.target.value)} />
+                        <Form.Control type="text" value={brand} placeholder="NIKE" onChange={(e) => setBrand(e.target.value)} />
                     </li>
                     <li>
                         <Form.Label>배송비</Form.Label>
@@ -243,7 +243,7 @@ export default function RegiProduct() {
                     </li>
                     <li>
                         <Form.Label>상품 설명</Form.Label>
-                        <Form.Control type="text" value={description} onChange={(e) => setDescription(e.target.value)} />
+                        <Form.Control type="text" value={description} placeholder="여성용 티셔츠입니다." onChange={(e) => setDescription(e.target.value)} />
                     </li>
                     <li>
                         <Form.Label>사진 업로드</Form.Label>
